@@ -12,9 +12,9 @@ for ele in a:
 #print(c)
 
 
-aa = [random.randrange(1000) for i in range(120)]
+aa = [random.randrange(10) for i in range(12)]
 print(aa)
-bb = [random.randrange(1000) for i in range(120)]
+bb = [random.randrange(10) for i in range(12)]
 print(bb)
 cc = set()
 
