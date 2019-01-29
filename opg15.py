@@ -5,13 +5,13 @@ write program w functions
 """
 
 user = input("Type a sentence: ")
+words = []
 
-def split_string():
+def reverse_sentence(words):
     words = user.split()
+    for i in reversed(words):
+        words.reverse()
     return words
 
-def reverse_string(alist):
-    for i in alist:
-        if 
-    return
-
+new_sentence = reverse_sentence(user)
+print(new_sentence)
