@@ -1,0 +1,16 @@
+Hellois an online "weird text translator".
+It converts normal text into weird text
+by using unusual unicode symbols
+which resemble the normal number and letter characters of the alphabet.
+It's able to generate weird text symbols from the normal ASCII symbols
+that you are able to copy and paste,
+because all the characters in the right-hand box of the translator
+are funky characters from the unicode standard.
+The weird hacky text is known as "zalgo" text,
+and is probably what most people are using this translator for.
+The reason it makes text glitchy is because unicode has a special notation for diacritic marks
+(those strange little symbols that are above or below characters
+that you see in French, Spanish, mathematics notations, etc.).
+Happily, unicode allows us to add as many strange marks to each character as we like,
+and so we can take advantage of that to convert text into weird hacky text
+which you can copy and paste to YouTube comments so people know you're a l33t h4ck3r.HelloHelloHelloHelloHelloHello
