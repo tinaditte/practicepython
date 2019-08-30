@@ -14,6 +14,9 @@ class Calendar(object):
         else:
             return True
 
+    def __init__(self, d, m, y):
+        self.set_Calendar(d, m, y)
+
     def set_Calendar(self, d, m, y):
         #d, m, y must be integers, y has be to 4 digits
         if type(d) == int and type(m) == int and type(y) == int:
@@ -22,9 +25,6 @@ class Calendar(object):
             self.__years = y
         else:
             raise TypeError("d, m, y have to be integers")
-
-    def __init__(self, d, m, y):
-        self.set_Calendar(d, m, y)
 
     def __str__(self):
         if Calendar.date_style == "British":

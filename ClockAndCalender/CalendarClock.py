@@ -1,6 +1,4 @@
-from .Clock import Clock
-from .Calendar import Calendar
-
+from ClockAndCalender import Clock, Calendar
 
 class CalendarClock (Clock, Calendar):
 
@@ -18,8 +16,8 @@ class CalendarClock (Clock, Calendar):
         return Calendar.__str__(self) + ", " + Clock.__str__(self)
 
 
-
-x = CalendarClock(31, 12, 2013, 23, 59, 59)
-print("One tick from ", x, end=" ")
-x.tick()
-print("to ", x)
+if __name__ == "__main__":
+    x = CalendarClock(31, 12, 2013, 23, 59, 59)
+    print("One tick from ", x, end=" ")
+    x.tick()
+    print("to ", x)

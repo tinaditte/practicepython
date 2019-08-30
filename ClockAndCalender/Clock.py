@@ -1,8 +1,11 @@
 class Clock(object):
 
-    def set__Clock(self, hours, minutes, seconds):
+    def __init__(self, hours, minutes, seconds):
+        self.set_Clock(hours, minutes, seconds)
+
+    def set_Clock(self, hours, minutes, seconds):
         if type(hours) == int and 0 <= hours and hours < 24:
-            self.__hours = hours
+            self._hours = hours
         else:
             raise TypeError("Hours have to be integers between 0 and 23")
 
@@ -16,11 +19,8 @@ class Clock(object):
         else:
             raise TypeError("Seconds have to be integers between 0 and 59")
 
-    def __init__(self, hours, minutes, seconds):
-        self.set_Clock(hours, minutes, seconds)
-
     def __str__(self):
-        return "{0:02d}:{1:02d}:{2:02d}".format(self.__hours, self.__minutes, self.__seconds)
+        return "{0:02d}:{1:02d}:{2:02d}".format(self._hours, self.__minutes, self.__seconds)
 
     def tick(self):
         """
@@ -38,10 +38,10 @@ class Clock(object):
             self.__seconds = 0
             if self.__minutes == 59:
                 self.__minutes = 0
-                if self.__hours == 23:
+                if self._hours == 23:
                     self.hours = 0
                 else:
-                    self.__hours += 1
+                    self._hours += 1
             else:
                 self.__minutes += 1
         else:
